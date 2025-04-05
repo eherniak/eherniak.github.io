@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+#wrapper {
+    background-color: white;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: rgb(72, 72, 72);
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+
+form {
+    margin-top: 2rem;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1.5rem; 
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+   
+}
+
+input[type="text"],
+input[type="radio"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+
+#multchoice p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.submit-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: #0d6dd4;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #054ade;
+}
