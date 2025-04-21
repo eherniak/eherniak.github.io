@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Mountain French Bulldog Rescue</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ecf6ff;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #3d7b99;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        
+        .frenchie-face {
+            font-size: 24px;
+            color: #666;
+        }
+        
+        .tagline {
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        .nav-custom {
+            background-color: #5780a9;
+            padding: 10px 0;
+        }
+        
+        .nav-custom .nav-link {
+            color: rgb(200, 224, 245);
+            font-weight: 500;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        
+        .nav-custom .nav-link.active {
+            background-color: #1d3a48;
+            color: rgb(255, 255, 255);
+        }
+        
+        .welcome-section {
+            border: 1px solid #05101c;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .welcome-heading {
+            
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .welcome-text {
+            color: rgb(44, 44, 44);
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        
+        .card-img-top {
+           
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  max-height: 350px;
+  margin-bottom: 1rem;
+}
+        
+        
+        .card-title {
+            color: #3d6980;
+            font-weight: 600;
+        }
+        
+        .card-text {
+            color: #555;
+        }
+        
+        .btn-primary {
+            background-color: #3d7b99;
+            border-color: #3d7b99;
+            padding: 8px 25px;
+            font-weight: 500;
+        }
+        
+        .btn-primary:hover {
+            background-color: #345e74;
+            border-color: #345e74;
+        }
+        
+        .updates-section {
+            background-color: #f0f5f8;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .updates-heading {
+            color: #3d6980;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .event-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            height: 100%;
+        }
+        
+        .event-title {
+            color: #3d6980;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #f0f5f8;
+            padding: 15px;
+            color: #555;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header-container">
+            <div class="logo">
+                <div class="frenchie-face">
+                    <img src="https://www.rmfbr.org/wp-content/uploads/2024/04/Subject-5-e1714176054548.png" alt="RMFBR logo">
+                </div>
+            </div>
+            <div>
+                <h1>Rocky Mountain French Bulldog Rescue</h1>
+                <p class="tagline">Because Every French Bulldog Deserves a Furever Home</p>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="nav-custom">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Donate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Dogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Surrender</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Volunteer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Boutique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h2 class="welcome-heading">Welcome to Our Rescue</h2>
+            <p class="welcome-text">Find French Bulldogs to adopt or learn how you can help</p>
+        </div>
+        
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Home</li>
+            </ol>
+        </nav>
+        
+        <!-- main content-->
+        <div class="row">
+            <!-- Our Mission -->
+            <div class="col-md-4">
+                <div class="card">
+                    
+                        <img class="card-img-top" src=" https://www.rmfbr.org/wp-content/uploads/2024/04/KK1.jpeg" class="object-fit-none border rounded" alt="Woman Holding a handicapped frenchie">
+                
+                    <div class="card-body">
+                        <h3 class="card-title">Obout the Rescue</h3>
+                        <p class="card-text">Learn about our mission and ways to get involved</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- our dogs -->
+            <div class="col-md-4">
+                <div class="card">
+                    
+                        <img class="card-img-top" src="https://www.dailycamera.com/wp-content/uploads/2019/08/RockyMtnAmericanBulldogRescue__JP11931.jpg?w=514" alt="French Bulldog up for Adoption">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title">Our Dogs</h3>
+                        <p class="card-text">Meet dogs available for adoption or fostering</p>
+                        <a href="#" class="btn btn-primary">Meet Dogs</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- donate-->
+            <div class="col-md-4">
+                <div class="card">
+                    
+                        <img class="card-img-top" src="https://images.squarespace-cdn.com/content/v1/605e08eab21b8a5223e3c324/d7fba38b-6cf1-4a5a-b4d1-141a427b5195/bean.png" alt="French Bulldog at the Vet">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title">Support Us</h3>
+                        <p class="card-text">Multiple ways to help our rescue mission</p>
+                        <a href="#" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Recent Updates Section -->
+        <div class="updates-section">
+            <h2 class="updates-heading">Recent Updates</h2>
+        </div>
+        
+        <!-- Events and Volunteer Info -->
+        <div class="row">
+            <!-- Upcoming Event -->
+            <div class="col-md-6">
+                <div class="event-card">
+                    <h3 class="event-title">Upcoming Event: Painting with Pups</h3>
+                    <p>Join us for our monthly fundraiser where French Bulldogs create paw-some art!</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Volunteer Opportunities -->
+            <div class="col-md-6">
+                <div class="event-card">
+                    <h3 class="event-title">Volunteer Opportunities</h3>
+                    <p>We need help with multiple remote positions, each requiring less than 5 hours per week.</p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>Rocky Mountain French Bulldog Rescue © 2025</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
