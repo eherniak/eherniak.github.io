@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #ecf6ff;
+            background-color: #ffffff;
             font-family: 'Arial', sans-serif;
         }
         
@@ -22,58 +22,58 @@
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            border: 2px solid #3d7b99;
+            border: 2px solid #1c354a;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 20px;
         }
         
-        .frenchie-face {
-            font-size: 24px;
-            color: #666;
-        }
-        
         .tagline {
-            color: #555;
+            color: rgb(63, 63, 63);
             font-size: 1.1rem;
         }
         
-        .nav-custom {
-            background-color: #5780a9;
-            padding: 10px 0;
+        .nav-item .nav-link {
+            color: #325f83;
+            font-size: 22px;
+            padding: 15px 20px;
         }
-        
-        .nav-custom .nav-link {
-            color: rgb(200, 224, 245);
-            font-weight: 500;
-            padding: 10px 20px;
-            margin: 0 5px;
-            border-radius: 5px;
+        .nav-item .nav-link.active {
+            font-weight: bold;
+            color: #23495c;
+            background-color: #f0f7fd;
+            border-radius: 3px;
         }
-        
-        .nav-custom .nav-link.active {
-            background-color: #1d3a48;
-            color: rgb(255, 255, 255);
-        }
-        
-        .welcome-section {
-            border: 1px solid #05101c;
-            border-radius: 8px;
-            padding: 20px;
+
+     
+        .divider {
+            height: 1px;
+            background-color: #e5e5e5;
             margin: 20px 0;
         }
         
-        .welcome-heading {
-            
-            font-weight: 600;
-            margin-bottom: 5px;
+        .welcome-section {
+           color: rgb(63, 63, 63);
+           
+            padding: 10px;
+            margin: 10px 0;
         }
         
+        .welcome-heading {
+            color: #1c354a;
+            font-weight: bold;
+           
+           
+        }
+
+        
         .welcome-text {
-            color: rgb(44, 44, 44);
+       
             font-size: 1.1rem;
         }
+
+        
         
         .card {
             border-radius: 8px;
@@ -93,12 +93,12 @@
         
         
         .card-title {
-            color: #3d6980;
+            color: #1c354a;
             font-weight: 600;
         }
         
         .card-text {
-            color: #555;
+            color: rgb(63, 63, 63);
         }
         
         .btn-primary {
@@ -121,7 +121,7 @@
         }
         
         .updates-heading {
-            color: #3d6980;
+            color: #1c354a;
             font-weight: 600;
             margin-bottom: 10px;
         }
@@ -134,7 +134,7 @@
         }
         
         .event-title {
-            color: #3d6980;
+            color:#1c354a;
             font-weight: 600;
             margin-bottom: 10px;
         }
@@ -142,7 +142,7 @@
         footer {
             background-color: #f0f5f8;
             padding: 15px;
-            color: #555;
+            color: rgb(63, 63, 63);
             text-align: center;
             border-radius: 8px;
             margin-top: 20px;
@@ -152,53 +152,61 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header-container">
-            <div class="logo">
-                <div class="frenchie-face">
-                    <img src="https://www.rmfbr.org/wp-content/uploads/2024/04/Subject-5-e1714176054548.png" alt="RMFBR logo">
+        <!-- Header Area -->
+        <header class="border mt-3 mb-3 p-3">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                    <div class="logo">
+                        <img src="https://www.rmfbr.org/wp-content/uploads/2024/04/Subject-5-e1714176054548.png" alt="RMFBR logo">
+                    </div>
                 </div>
+                <div class="col-md-8">
+                    <h1 class="mb-1" style="font-size: 32px; font-weight: bold; color: #1c354a;">Rocky Mountain French Bulldog Rescue</h1>
+                    <p class="mb-0" style="font-size: 22px; color: rgb(63, 63, 63);">Because Every French Bulldog Deserves a Furever Home</p>
+                </div>
+                
             </div>
-            <div>
-                <h1>Rocky Mountain French Bulldog Rescue</h1>
-                <p class="tagline">Because Every French Bulldog Deserves a Furever Home</p>
-            </div>
-        </div>
+        </header>
         
-        <!-- Navigation -->
-        <nav class="nav-custom">
-            <div class="row">
-                <div class="col">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Donate</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Dogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Surrender</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Volunteer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Boutique</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+ <!-- Navigation -->
+ <nav class="border mb-4">
+    <ul class="nav justify-content-start">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Donate</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Our Dogs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Surrender</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Volunteer</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Boutique</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Owner Resources</a>
+        </li>
+    </ul>
+</nav>
         
         <!-- Welcome Section -->
         <div class="welcome-section">
+            <div class="divider"></div>
             <h2 class="welcome-heading">Welcome to Our Rescue</h2>
             <p class="welcome-text">Find French Bulldogs to adopt or learn how you can help</p>
+            <div class="divider"></div>
         </div>
         
         <!-- Breadcrumb -->
@@ -284,6 +292,10 @@
             <p>Rocky Mountain French Bulldog Rescue © 2025</p>
         </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
